@@ -87,3 +87,61 @@
 {
     opacity: 0;
 }
+html 
+{
+    scroll-behavior: smooth
+}
+
+.commentaire
+{
+  display:block;
+  height: auto;
+  width: 1300px;
+  border: solid;
+  border-width: 1px;
+  border-color: #000;
+  margin : 5px;
+  padding: 2px;
+
+}
+
+.commentaire2
+{
+  display:block;
+  height: auto;
+  width: 1300px;
+  border: solid;
+  border-width: 1px;
+  border-color: #000;
+  margin : 5px;
+  padding: 2px;
+  margin-left: 100px;
+
+}
+
+.photoDeProfil{
+	width:43px;
+  height:43px;
+  border-radius: 100px;
+  background:#000;
+display: inline-block;
+margin-top: 1px;
+margin-left: 4px;
+
+
+
+}
+
+.texte1
+{
+  font-family:Segeo Ui, sans-serif;
+   font-size:100%;
+   color: #707070; 
+   margin-top : -43px; 
+   margin-left: 60px;
+}
+.texte2
+{
+  margin-top : -10px; 
+  margin-left: 100px;
+}
