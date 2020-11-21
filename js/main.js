@@ -1,4 +1,4 @@
-var lol = 0;
+var lol = 2;
 
 function myFunction()
 {
@@ -7,23 +7,51 @@ function myFunction()
   {
     lol = 1;
   }
-  console.log(lol);
   document.getElementById('diapo'+lol).className = "diapo1";
   lol = lol + 1;
   if(lol > 3)
   {
     lol = 1;
   }
-   console.log(lol);
   document.getElementById('diapo'+lol).className = "diapo2";
   lol = lol + 1;
   if(lol > 3)
   {
     lol = 1;
   }
-  console.log(lol);
+
   document.getElementById('diapo'+lol).className = "diapo3";
     lol = lol - 1;
+
+    console.log(lol);
+}
+
+
+function myFunction2()
+{
+  lol = lol - 1;
+  if(lol < 1)
+  {
+    lol = 3;
+  }
+  document.getElementById('diapo'+lol).className = "diapo3";
+  lol = lol - 1 ;
+  if(lol < 1)
+  {
+    lol = 3;
+  }
+
+  document.getElementById('diapo'+lol).className = "diapo2";
+  lol = lol - 1;
+  if(lol < 1)
+  {
+    lol = 3;
+  }
+  
+  document.getElementById('diapo'+lol).className = "diapo1";
+    lol = lol + 1;
+
+    console.log(lol);
 }
 
 function testHidden()
