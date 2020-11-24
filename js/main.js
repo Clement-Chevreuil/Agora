@@ -3,6 +3,30 @@ var lol = 5;
 var fonction2 = lol - 1;
 var aRetenir = lol;
 
+function openArticle()
+{
+  document.getElementById("postPost").style.visibility = "visible";
+}
+function closeArticle()
+{
+  document.getElementById("postPost").style.visibility = "hidden";
+  document.getElementById("openComment").style.visibility = "hidden";
+}
+function openComment()
+{
+  document.getElementById("openComment").style.visibility = "visible";
+}
+function closeComment()
+{
+  document.getElementById("openComment").style.visibility = "hidden";
+}
+
+function redirection()
+{
+  console.log("hello");
+  location.href='register.html';
+}
+
 function miseAjourLol(nb)
 {
     lol = nb - 1;
@@ -130,4 +154,5 @@ function myFunction2()
 
 
 }
+
 

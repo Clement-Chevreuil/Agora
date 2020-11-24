@@ -223,3 +223,11 @@ display: block;
 
 }
 
+.div_post
+{
+  margin-top: 1000px;
+}
+.hidehide
+{
+  visibility: hidden;
+}
