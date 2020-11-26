@@ -1,7 +1,8 @@
-var lol = 5;
+var variable = 5;
 
-var fonction2 = lol - 1;
-var aRetenir = lol;
+var variable_second_function = variable - 1;
+
+var variable_fix = variable;
 
 function openArticle()
 {
@@ -23,74 +24,73 @@ function closeComment()
 
 function redirection()
 {
-  console.log("hello");
   location.href='register.html';
 }
 
-function miseAjourLol(nb)
+function miseAjourvariable(nb)
 {
-    lol = nb - 1;
-    aRetenir = nb-1;
+    variable = nb - 1;
+    variable_fix = nb-1;
 }
 
-function myFunction()
+function RightRotation()
 {
-  lol = lol + 1;
+  variable = variable + 1;
 
-  for (let i = aRetenir + 2 ; i < aRetenir + aRetenir + 2; i++) // cette boucle permet de gerer le fais d'aller à droite si on allez a gauche precedement, permet la gestion de lol à travers les deux  fonctions
+  for (let i = variable_fix + 2 ; i < variable_fix + variable_fix + 2; i++) // cette boucle permet de gerer le fais d'aller à droite si on allez a gauche precedement, permet la gestion de variable à travers les deux  fonctions
   {
 
-      if(lol == i)
+      if(variable == i)
       {
-        lol = i - aRetenir-1;
+        variable = i - variable_fix-1;
       }
     
   }
   //boucle pour aller vers la droite
-  for (let i = 1 ; i < aRetenir + 2 ; i++) 
+  for (let i = 1 ; i < variable_fix + 2 ; i++) 
   {
     
     if (i == 1)
     {
-      document.getElementById('diapo'+lol).className = "diapo1";
-      lol = lol + 1;
+      document.getElementById('slide'+variable).className = "left_slide";
+      variable = variable + 1;
 
-      if(lol > aRetenir+1)
+      if(variable > variable_fix+1)
       {
-        lol = 1;
+        variable = 1;
       }
     }
    
     else if (i == 2)
     {
-      document.getElementById('diapo'+lol).className = "diapo2";
-      lol = lol + 1;
-      if(lol > aRetenir+1)
+      document.getElementById('slide'+variable).className = "mid_slide";
+      variable = variable + 1;
+      if(variable > variable_fix+1)
       {
-        lol = 1;
+        variable = 1;
       }
     }
     else if(i == 3)
     {
-      document.getElementById('diapo'+lol).className = "diapo3";
-      lol = lol + 1;
-      if(lol > aRetenir+1)
+      document.getElementById('slide'+variable).className = "right_slide";
+      variable = variable + 1;
+      if(variable > variable_fix+1)
       {
-        lol = 1;
+        variable = 1;
       }
     }
-    else if(i == aRetenir+1)
+    else if(i == variable_fix+1)
     {
-      document.getElementById('diapo'+lol).className = "vide";
-      lol = lol - 1;
+      document.getElementById('slide'+variable).className = "vide";
+      variable = variable - 1;
     }
     else
     {
-      document.getElementById('diapo'+lol).className = "vide";
-      lol = lol + 1;
-      if(lol > aRetenir+1)
+      document.getElementById('slide'+variable).className = "vide";
+      variable = variable + 1;
+      if(variable > variable_fix+1)
       {
-        lol = 1;
+        variable = 1;
       }
     }
   }
@@ -99,55 +99,55 @@ function myFunction()
 //boucle pour alle vers la gauche
 
 
-function myFunction2()
+function LeftRotation()
 {
-  lol = lol - fonction2;
+  variable = variable - variable_second_function;
 
-  var ff = aRetenir + 2;
-  for (let i = 0 ; i > -aRetenir; i--) // cette boucle permet de gerer le fais d'aller à gauche si on allez a droite precedement permet la gestion de lol à travers les deux  fonctions
+  var variable_boucle = variable_fix + 2;
+
+  for (let i = 0 ; i > -variable_fix; i--) // cette boucle permet de gerer le fais d'aller à gauche si on allez a droite precedement permet la gestion de variable à travers les deux  fonctions
   {     
-    ff = ff - 1;
-      if(lol == i)
+      variable_boucle = variable_boucle - 1;
+      if(variable == i)
       {
    
-        lol = ff;
+        variable = variable_boucle;
       }  
   }
 
-  for (let i = 1 ; i < aRetenir + 2 ; i++) 
+  for (let i = 1 ; i < variable_fix + 2 ; i++) 
   {
-    if (i == aRetenir+1)
+    if (i == variable_fix+1)
     {
-      document.getElementById('diapo'+lol).className = "diapo1";
-      lol = lol + fonction2;
-      console.log(lol);
+      document.getElementById('slide'+variable).className = "left_slide";
+      variable = variable + variable_second_function;
     }
    
-    else if (i == aRetenir)
+    else if (i == variable_fix)
     {
-      document.getElementById('diapo'+lol).className = "diapo2";
-      lol = lol - 1;
-      if(lol < 1)
+      document.getElementById('slide'+variable).className = "mid_slide";
+      variable = variable - 1;
+      if(variable < 1)
       {
-        lol = fonction2 + 2;
+        variable = variable_second_function + 2;
       }
     }
-    else if(i == aRetenir - 1)
+    else if(i == variable_fix - 1)
     {
-      document.getElementById('diapo'+lol).className = "diapo3";
-      lol = lol - 1 ;
-      if(lol < 1)
+      document.getElementById('slide'+variable).className = "right_slide";
+      variable = variable - 1 ;
+      if(variable < 1)
       {
-        lol = fonction2 + 2;
+        variable = variable_second_function + 2;
       }
     }
     else
     {
-      document.getElementById('diapo'+lol).className = "vide";
-      lol = lol - 1 ;
-      if(lol < 1)
+      document.getElementById('slide'+variable).className = "vide";
+      variable = variable - 1 ;
+      if(variable < 1)
       {
-        lol = fonction2 + 2;
+        variable = variable_second_function + 2;
       }
     }
   }
