@@ -304,24 +304,28 @@ p{
     bottom : 3%;
     right: 10%;
 }
-.btn-primary {
+.btn-primary 
+{
     color: #fff;
     background-color: #5d1c1c;
     border-color: #5d1c1c;
 }
 
-.btn-primary:hover {
+.btn-primary:hover 
+{
     color: #fff;
     background-color: #991010;
     border-color: #991010;
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus, .btn-primary.focus 
+{
     color: #fff;
     background-color: #991010;
     border-color: #991010;
     box-shadow: 0 0 0 0.2rem #991010;
 }
+
 .btn-lg, .btn-group-lg > .btn {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;

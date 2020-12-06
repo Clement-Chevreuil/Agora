@@ -157,7 +157,6 @@ function LeftRotation()
 
 function affichage(id)
 {
-  console.log(id);
   if(id == "convThomas")
   {
     document.getElementById("base").style.display = "none";
@@ -165,6 +164,7 @@ function affichage(id)
     document.getElementById(id).style.display = "block";
     document.getElementById("changeFontThomas").style.backgroundColor = "#512d31";
     document.getElementById("changeFontMalory").style.backgroundColor = "#844b52";
+    document.getElementById("nomUtilisateur1").innerHTML = 'Thomas';
   }
   if(id == "convMalory")
   {
@@ -174,6 +174,7 @@ function affichage(id)
     document.getElementById(id).style.display = "block";
     document.getElementById("changeFontMalory").style.backgroundColor = "#512d31";
     document.getElementById("changeFontThomas").style.backgroundColor = "#844b52";
+    document.getElementById("nomUtilisateur2").innerHTML = 'Malory';
   }
 }
 
