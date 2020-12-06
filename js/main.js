@@ -155,4 +155,26 @@ function LeftRotation()
 
 }
 
+function affichage(id)
+{
+  console.log(id);
+  if(id == "convThomas")
+  {
+    document.getElementById("base").style.display = "none";
+    document.getElementById("convMalory").style.display = "none";
+    document.getElementById(id).style.display = "block";
+    document.getElementById("changeFontThomas").style.backgroundColor = "#512d31";
+    document.getElementById("changeFontMalory").style.backgroundColor = "#844b52";
+  }
+  if(id == "convMalory")
+  {
+    document.getElementById("base").style.display = "none";
+    document.getElementById("convThomas").style.display = "none";
+    document.getElementById(id).style.display = "block";
+    document.getElementById(id).style.display = "block";
+    document.getElementById("changeFontMalory").style.backgroundColor = "#512d31";
+    document.getElementById("changeFontThomas").style.backgroundColor = "#844b52";
+  }
+}
+
 
