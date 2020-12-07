@@ -1,3 +1,6 @@
+
+
+
 var variable = 5;
 
 var variable_second_function = variable - 1;
@@ -12,6 +15,8 @@ function closeArticle()
 {
   document.getElementById("postPost").style.visibility = "hidden";
   document.getElementById("openComment").style.visibility = "hidden";
+  location.href='#base';
+  console.log("hey3");
 }
 function openComment()
 {
@@ -20,6 +25,8 @@ function openComment()
 function closeComment()
 {
   document.getElementById("openComment").style.visibility = "hidden";
+  location.href='#top';
+
 }
 
 function redirection()
@@ -179,3 +186,5 @@ function affichage(id)
 }
 
 
+
+location.href='index.html#base';

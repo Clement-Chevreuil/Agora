@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="css/post.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/indexSuite.css"/>
 <script type="text/javascript" src="js/main.js"></script>
 
+<p id="base"></p>
 <button  onclick="redirection()" style="float:right" class="btn btn-primary btn-lg">Register</button>
 
 <div style="box-sizing: border-box; display:block; position: relative; transform: translateY(35%);"> 
@@ -150,7 +153,7 @@
             </div>
         </div>
 
-        <div id="slide6" class="slide6" onclick="openArticle()">
+        <div id="slide6" class="slide6" onclick="openArticle();">
             <div class="div_post" name="post" id="post">
                 <div class="title_post">
                     <h1>Actor Rutger Hauer (Blade Runner 1982) dies at 75</h1>
@@ -182,11 +185,11 @@
     </div>    
 </div>
 
-z
+
     <div class="div_post divRo" name="post" id="postPost">
         <img style="float:right" src="images/close2.png" onclick="closeArticle()">
         <div name="post" id="post" class="div_post_section">
-            <div id="#title" class="title_post"><h1>title</h1></div>
+            <div id="top" class="title_post"><h1>title</h1></div>
             <div class="post_tag">
                 <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Tag 1</button>
                 <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Tag 2</button>
@@ -321,12 +324,34 @@ z
 </div>
 
 <div id="openComment" class="hidehide">
-    <img style="float:right" src="images/close2.png" onclick="closeComment()">
+    <a onclick="closeComment(); "><img style="float:right" src="images/close2.png" ></a>
     <center><h1>Comment : </h1></center>
     <br>
     <center><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></center>
     <br>
-    <center><button class="btn btn-primary btn-lg">Envoyer</button></center>
+    
+    <center>
+        <button class="reaction bas" ></button>
+        <button class="reaction neutre"></button>
+        <button class="reaction haut"></button>
+        
+        <br>
+        <br>
+        <label for="image_uploads">Sélectionner des images à uploader (PNG, JPG)</label>
+        <br>
+        <br>
+        <div class="parent-div click">
+            <button class="btn-upload click">Choisir un fichier</button>
+            <input type="file" name="upfile">
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="btn btn-primary btn-lg">Envoyer</button>
+        <br>
+    </center>
+    
 </div>
 
 

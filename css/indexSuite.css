@@ -1,0 +1,117 @@
+html 
+{
+    scroll-behavior: smooth
+}
+textarea
+{
+  resize: none;
+  width: 720px; 
+  height:290px;
+  border-radius: 10px;
+}
+textarea:focus
+{
+    outline: 0;
+    border: 3px solid #3f131d;
+}
+
+.reaction
+{
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    background-size: 50px;
+}
+.reaction:hover
+{
+    cursor: pointer;
+}
+
+.class
+
+.haut
+{
+    background: url("../images/haut.png");
+    background-size: 50px;
+    border:0px;
+    transition: 0.2s;
+}
+.bas
+{
+    background: url("../images/bas.png");
+    background-size: 50px;
+    border:0px;
+    transition: 0.2s;
+}
+.neutre
+{
+    background: url("../images/neutre.png");
+    background-size: 50px;
+    border:0px;
+    transition: 0.2s;
+}
+.haut:focus
+{
+    background: url("../images/hautActif.png");
+    background-size: 50px;
+    border:0px;
+    outline: 0;
+}
+.bas:focus
+{
+    background: url("../images/basActif.png");
+    background-size: 50px;
+    border:0px;
+    outline: 0;
+}
+.neutre:focus
+{
+    background: url("../images/neutreActif.png");
+    background-size: 50px;
+    border:0px;
+    outline: 0;
+
+}
+
+.parent-div {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .parent-div input[type=file] {
+    left: 0;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+ 
+
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #e2e2e2;
+    z-index: 1;
+    width: 146px;
+    height: 29px;
+
+  }
+  .btn-upload {
+    background-color: #3f131d;
+    border: 1px solid #844b52;
+    color: #844b52;
+    padding: 5px 13px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+ 
+  }
+
+  .click
+  {
+      transition: 1s;
+  }
+  .click:hover
+  {
+      transform: scale(1.2);
+  }
+
