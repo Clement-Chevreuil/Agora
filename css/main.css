@@ -5,45 +5,19 @@
 }
 .tourniquer
 {
-  display: flex;
-  position: relative;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  width: 1192px;
-  height: 465px;
+    display: flex;
+    position: relative;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 1192px;
+    height: 465px;
 }
-.click_slide_left
+
+.left-slide
 {
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-    transform: translate3d(-237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 2;
-}
-.click_slide_right
-{
-  
-   box-sizing: border-box;
-     width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-        transform: translate3d(237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 2;
-}
-.left_slide
-{
-   box-sizing: border-box;
+    box-sizing: border-box;
     width: 845px;
     height: 100%;
     position: absolute;
@@ -63,7 +37,7 @@
 
 .vide
 {
-   box-sizing: border-box;
+    box-sizing: border-box;
     width: 845px;
     height: 100%;
     position: absolute;
@@ -81,29 +55,28 @@
     filter: brightness(.9);
 }
 
-.right_slide
+.right-slide
 {
-  
-   box-sizing: border-box;
-     width: 845px;
+    box-sizing: border-box;
+    width: 845px;
     height: 100%;
     position: absolute;
     top: 0;
     left: 185px;
     transition: all 0.3s;
-    transform: translate3d(237px, 0, 0) scale(0.87);
+        transform: translate3d(237px, 0, 0) scale(0.87);
     opacity: 1;
     z-index: 1;
-    transition: all 0.3s;
+        transition: all 0.3s;
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
     filter: brightness(.9);
 }
-.mid_slide
+.mid-slide
 {
-   box-sizing: border-box;
+    box-sizing: border-box;
     width: 845px;
     height: 100%;
     opacity: 1;
@@ -111,9 +84,9 @@
     top: 0;
     left: 185px;
     transition: all 0.3s;
-      transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
     z-index: 2;
-        transition: all 0.3s;
+    transition: all 0.3s;
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease;
@@ -122,4 +95,41 @@
 .slide-vide
 {
     opacity: 0;
+}
+
+.arrow
+{
+    transform: scale(0.1);
+    display: block;
+    transition: 0.2s;
+}
+
+.arrow-left
+{
+    position: absolute; left: 2em;
+}
+
+.arrow-left:hover
+{
+    transform: scale(0.12) translateX(-100px);
+}
+
+.arrow-left:active
+{
+    transform: scale(0.15) translateX(-150px);
+}
+
+.arrow-right
+{
+    position: absolute; right: 2em;
+}
+
+.arrow-right:hover
+{
+    transform: scale(0.12) translateX(100px);
+}
+
+.arrow-right:active
+{
+    transform: scale(0.15) translateX(150px);
 }

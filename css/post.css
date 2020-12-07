@@ -1,128 +1,25 @@
-.ensembleTourniquer
+
+
+.reactions
 {
-    box-sizing: border-box;
-    display: block;
-}
-.tourniquer
-{
-  display: flex;
-  position: relative;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  width: 1192px;
-  height: 465px;
+    float: left; 
+    padding-right: 10px;
 }
 
-.surDiapo1
+.bio-mini
 {
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-    transform: translate3d(-237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 2;
-}
-.surDiapo3
-{
-  
-   box-sizing: border-box;
-     width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-        transform: translate3d(237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 2;
-}
-.diapo1
-{
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-    transform: translate3d(-237px, 0, 0) scale(0.87);
-    opacity: 1;
-    z-index: 1;
-    transition: all 0.3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    filter: brightness(.9);
+    float: right;
+    display: block; 
+    padding: 5px; 
+    background-color: #89435f; 
+    border-radius: 5px;
+    transition: all 0.5s;
 }
 
-.vide
+.bio-mini:hover
 {
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-    transform: translate3d(-237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 1;
-    transition: all 0.3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    filter: brightness(.9);
-}
-
-.diapo3
-{
-  
-   box-sizing: border-box;
-     width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-        transform: translate3d(237px, 0, 0) scale(0.87);
-    opacity: 1;
-    z-index: 1;
-        transition: all 0.3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    filter: brightness(.9);
-}
-.diapo2
-{
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-      transform: translate3d(0, 0, 0) scale(1);
-    z-index: 2;
-        transition: all 0.3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-.diapo-vide
-{
-    opacity: 0;
+    
+    transform: scale(1.2);
 }
 
 body {
@@ -164,6 +61,23 @@ p{
     height: 90%;
     border-radius: 10px;
 }
+
+.div_post_mini
+{
+    transition: 1s;
+}
+
+.div_post_mini:hover
+{
+    transform: translate(-50%, -40%) scale(1.2);
+}
+
+.div_post_mini:active
+{
+    transition: 0.5s;
+    transform: translate(-50%, -30%) scale(1.5);
+}
+
 .divRo 
 {
     visibility : hidden;
@@ -206,12 +120,13 @@ p{
     width: 20%;
     height: 100%;
     left: 5%;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
-.name_user:hover{
+
+/* .name_user:hover{
     content: url(../images/profile.jpg);
-}
+} */
 
 .bio_user{
     position: absolute;
@@ -304,28 +219,24 @@ p{
     bottom : 3%;
     right: 10%;
 }
-.btn-primary 
-{
+.btn-primary {
     color: #fff;
     background-color: #5d1c1c;
     border-color: #5d1c1c;
 }
 
-.btn-primary:hover 
-{
+.btn-primary:hover {
     color: #fff;
     background-color: #991010;
     border-color: #991010;
 }
 
-.btn-primary:focus, .btn-primary.focus 
-{
+.btn-primary:focus, .btn-primary.focus {
     color: #fff;
     background-color: #991010;
     border-color: #991010;
     box-shadow: 0 0 0 0.2rem #991010;
 }
-
 .btn-lg, .btn-group-lg > .btn {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
@@ -400,20 +311,11 @@ p{
     border-radius: 0.3rem;
 }
 
-.hidehide
-{
-    visibility: hidden;
-    margin-top:1450px;
-        color: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #722E37;
-        width: 80%;
-        height: 570px;
-        border-radius: 10px;
-        padding: 10px;
-}
 
+textarea {
+    resize: none;
+    height:80%;
+    width: 80%;
+  }
 
+  

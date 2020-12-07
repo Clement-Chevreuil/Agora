@@ -95,36 +95,6 @@ body
     overflow:scroll;
   }
 
-  .overlay2 
-{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height:250px;
-    background-color: #e2e2e2;
-    z-index: 0;
-
-  }
-
-  .superOverlay
-  {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 250px;
-      height:250px;
-      background-color: #e2e2e2;
-      z-index: 0;
-      overflow:scroll;
-  
-    }
-
-    .superOverlay::-webkit-scrollbar {
-        display: none;
-    }
 
     .overlay::-webkit-scrollbar {
         display: none;
@@ -139,20 +109,7 @@ body
   {
       font-size: 20px;
   }
-.bio
-{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:25px;
-    /* background-color: #9b5860; */
-    height: auto;
-    width: 800px;
-    border-radius: 5px;
-    color : #c4c4c4;
-   
 
-
-}
 
 
 

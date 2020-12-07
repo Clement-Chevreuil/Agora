@@ -1,4 +1,3 @@
-
 <header>
     <title>
         Agora
@@ -6,22 +5,16 @@
 </header>
 
 <link rel="stylesheet" href="css/post.css"/>
-<link rel="stylesheet" href="css/main.css"/>
-<link rel="stylesheet" href="css/comment.css">
-<script type="text/javascript" src="js/main.js"></script>
 <link rel='shortcut icon' type="image/png" href='./images/logo.png' />
+<script type="text/javascript" src="js/main.js"></script>
 
-
-<p id="base"></p>
-<button onclick="redirection()" style="float:right" class="btn btn-primary btn-lg">Register</button>
+<button  onclick="redirection()" style="float:right" class="btn btn-primary btn-lg">Register</button>
 
 <div style="box-sizing: border-box; display:block; position: relative; transform: translateY(35%);">
-
-    <img src="images/arrow_left.png" class="arrow arrow-left" onclick="left_rotation()" >
-    <img src="images/arrow_right.png" class="arrow arrow-right" onclick="right_rotation()">
-
+    <img src="images/arrow_left.png" class="arrow arrow-left" onclick="myFunction()">
+    <img src="images/arrow_right.png" class="arrow arrow-right" onclick="myFunction2()">
     <div class="tourniquer">
-        <div id="slide1" class="left-slide" onclick="open_article()">
+        <div id="diapo1" class="diapo1" onclick="openArticle()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>Smug cat.</h1>
@@ -47,7 +40,7 @@
             </div>
         </div>
 
-        <div id="slide2" class="mid-slide" onclick="open_article()">
+        <div id="diapo2" class="diapo2" onclick="openArticle()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>Look at my tiny bonsai trees ! :)</h1>
@@ -78,7 +71,7 @@
             </div>
         </div>
 
-        <div id="slide3" class="right-slide" onclick="open_article()">
+        <div id="diapo3" class="diapo3" onclick="openArticle()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>My Hollow Knight fan-art</h1>
@@ -108,7 +101,7 @@
             </div>
         </div>
 
-        <div id="slide4" class="vide" onclick="open_article()">
+        <div id="diapo4" class="vide" onclick="openArticle()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>A Book for Free Spirits, thoughts ?</h1>
@@ -138,7 +131,7 @@
             </div>
         </div>
 
-        <div id="slide5" class="vide" onclick="open_article()">
+        <div id="diapo5" class="vide" onclick="openArticle()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>Protests breaking in front of the white house on election day</h1>
@@ -163,7 +156,7 @@
             </div>
         </div>
 
-        <div id="slide6" class="vide" onclick="open_article()">
+        <div id="diapo6" class="diapo6" onclick="openArticle()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>Actor Rutger Hauer (Blade Runner 1982) dies at 75</h1>
@@ -196,10 +189,10 @@
 </div>
 
 
-    <div class="div_post divRo" name="post" id="full_post">
-        <img style="float:right" src="images/close2.png" onclick="close_article()">
+    <div class="div_post divRo" name="post" id="postPost">
+        <img style="float:right" src="images/close2.png" onclick="closeArticle()">
         <div name="post" id="post" class="div_post_section">
-            <div id="top" class="title_post"><h1>Look at my tiny bonsai trees ! :)</h1></div>
+            <div id="#title" class="title_post"><h1>Look at my tiny bonsai trees ! :)</h1></div>
             <div class="post_tag">
                 <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Wholesome</button>
                 <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Nature</button>
@@ -283,7 +276,7 @@
                 <p>2 replies</p>
             </div>
         </div>
-        <div class="comment" onclick="redirect()">
+        <div class="comment" onclick="redirection()">
             <div class="title_comment">
                 <h3>Lorem Ipsum</h3>
             </div>
@@ -334,45 +327,21 @@
     </div>
     
         <div class="btn_position">
-            <button type="button" class="btn btn-primary btn-lg" onclick="open_comment()">Comment</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="openComment()">Comment</button>
             <button type="button" class="btn btn-primary btn-lg">Reactions</button>
             <button type="button" class="btn btn-primary btn-lg">Filter</button>
         </div>
     </div>
 </div>
 
-<div id="open_comment" class="comment_hide">
-    <a onclick="close_comment(); "><img style="float:right" src="images/close2.png"></a>
-    <center>
-        <h1>Comment : </h1>
-    </center>
+<div id="openComment" class="hidehide">
+    <img style="float:right" src="images/close2.png" onclick="closeComment()">
+    <center><h1>Comment : </h1></center>
     <br>
     <center><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></center>
     <br>
-
-    <center>
-        <button class="reaction good-reaction"></button>
-        <button class="reaction neutral-reaction"></button>
-        <button class="reaction bad-reaction"></button>
-
-        <br>
-        <br>
-        <label for="image_uploads">Select a picture(PNG, JPG)</label>
-        <br>
-        <br>
-        <div class="parent-div click">
-            <button class="btn-upload click">Choose a file</button>
-            <input type="file" name="upfile">
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <button class="btn btn-primary btn-lg">Send</button>
-        <br>
-    </center>
+    <center><button class="btn btn-primary btn-lg">Envoyer</button></center>
 </div>
-
 
 
 

@@ -7,40 +7,18 @@ var variable_second_function = variable - 1;
 
 var variable_fix = variable;
 
-function openArticle()
-{
-  document.getElementById("postPost").style.visibility = "visible";
-}
-function closeArticle()
-{
-  document.getElementById("postPost").style.visibility = "hidden";
-  document.getElementById("openComment").style.visibility = "hidden";
-  location.href='#base';
-  console.log("hey3");
-}
-function openComment()
-{
-  document.getElementById("openComment").style.visibility = "visible";
-}
-function closeComment()
-{
-  document.getElementById("openComment").style.visibility = "hidden";
-  location.href='#top';
-
-}
-
-function redirection()
+function redirect()
 {
   location.href='register.html';
 }
 
-function miseAjourvariable(nb)
+function update_number_div(nb)
 {
     variable = nb - 1;
     variable_fix = nb-1;
 }
 
-function RightRotation()
+function right_rotation()
 {
   variable = variable + 1;
 
@@ -59,7 +37,7 @@ function RightRotation()
     
     if (i == 1)
     {
-      document.getElementById('slide'+variable).className = "left_slide";
+      document.getElementById('slide'+variable).className = "left-slide";
       variable = variable + 1;
 
       if(variable > variable_fix+1)
@@ -70,7 +48,7 @@ function RightRotation()
    
     else if (i == 2)
     {
-      document.getElementById('slide'+variable).className = "mid_slide";
+      document.getElementById('slide'+variable).className = "mid-slide";
       variable = variable + 1;
       if(variable > variable_fix+1)
       {
@@ -79,7 +57,7 @@ function RightRotation()
     }
     else if(i == 3)
     {
-      document.getElementById('slide'+variable).className = "right_slide";
+      document.getElementById('slide'+variable).className = "right-slide";
       variable = variable + 1;
       if(variable > variable_fix+1)
       {
@@ -106,7 +84,7 @@ function RightRotation()
 //boucle pour alle vers la gauche
 
 
-function LeftRotation()
+function left_rotation()
 {
   variable = variable - variable_second_function;
 
@@ -126,13 +104,13 @@ function LeftRotation()
   {
     if (i == variable_fix+1)
     {
-      document.getElementById('slide'+variable).className = "left_slide";
+      document.getElementById('slide'+variable).className = "left-slide";
       variable = variable + variable_second_function;
     }
    
     else if (i == variable_fix)
     {
-      document.getElementById('slide'+variable).className = "mid_slide";
+      document.getElementById('slide'+variable).className = "mid-slide";
       variable = variable - 1;
       if(variable < 1)
       {
@@ -141,7 +119,7 @@ function LeftRotation()
     }
     else if(i == variable_fix - 1)
     {
-      document.getElementById('slide'+variable).className = "right_slide";
+      document.getElementById('slide'+variable).className = "right-slide";
       variable = variable - 1 ;
       if(variable < 1)
       {
@@ -162,29 +140,28 @@ function LeftRotation()
 
 }
 
-function affichage(id)
+function open_article(cl)
 {
-  if(id == "convThomas")
-  {
-    document.getElementById("base").style.display = "none";
-    document.getElementById("convMalory").style.display = "none";
-    document.getElementById(id).style.display = "block";
-    document.getElementById("changeFontThomas").style.backgroundColor = "#512d31";
-    document.getElementById("changeFontMalory").style.backgroundColor = "#844b52";
-    document.getElementById("nomUtilisateur1").innerHTML = 'Thomas';
-  }
-  if(id == "convMalory")
-  {
-    document.getElementById("base").style.display = "none";
-    document.getElementById("convThomas").style.display = "none";
-    document.getElementById(id).style.display = "block";
-    document.getElementById(id).style.display = "block";
-    document.getElementById("changeFontMalory").style.backgroundColor = "#512d31";
-    document.getElementById("changeFontThomas").style.backgroundColor = "#844b52";
-    document.getElementById("nomUtilisateur2").innerHTML = 'Malory';
-  }
+  document.getElementById("full_post").style.visibility = "visible";
 }
 
 
+function close_article()
+{
+  document.getElementById("full_post").style.visibility = "hidden";
+  document.getElementById("open_comment").style.visibility = "hidden";
+  location.href='#base';
+  console.log("hey3");
+}
+function open_comment()
+{
+  document.getElementById("open_comment").style.visibility = "visible";
+}
+function close_comment()
+{
+  document.getElementById("open_comment").style.visibility = "hidden";
+  location.href='#top';
+
+}
 
 location.href='index.html#base';

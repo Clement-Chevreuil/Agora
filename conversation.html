@@ -7,7 +7,7 @@
     <link rel='stylesheet' type="text/css" href='css/conversation.css' />
     <link rel='stylesheet' type="text/css" href='css/bootstrap/bootstrap.css' />
     <link rel='shortcut icon' type="image/png" href='./images/logo.png' />
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/conversation.js"></script>
 </head>
 
 <body>
@@ -22,10 +22,10 @@
 
                         <div class="nav-friend" >
                             <br>
-                            <center><input placeholder="Chercher un ami" class="recherche"></center>
+                            <center><input placeholder="search" class="research"></center>
 
                             <br>
-                            <div class="test" id="changeFontThomas" onclick="affichage('convThomas')">
+                            <div class="test" id="font_thomas_friend_list" onclick="show_discussion('thomas_conv')">
                                 <div class="row">
                                     <div class="col-3">
                                         <div class="picture-icone-1"></div>
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
 
-                            <div class="test"  id="changeFontMalory" onclick="affichage('convMalory')">
+                            <div class="test"  id="font_malory_friend_list" onclick="show_discussion('malory_conv')">
                                 <div class="row">
                                     <div class="col-3">
                                         <div class="picture-icone-2"></div>
@@ -79,13 +79,13 @@
                 </div>
 
 
-                <div class="col-9" id="convThomas">
+                <div class="col-9" id="thomas_conv">
                     <div class="right">
                         <div class="top-right">
                             <div class="into-top-right">
                                 <br>
                                 <center>
-                                            <div class="picture-top-right" id="imageUser1"></div>
+                                            <div class="picture-top-right" id="image-user-1"></div>
                                             <p class="title2" id="nomUtilisateur1">clement_cvl</p>
                                 </center>
                           
@@ -93,42 +93,42 @@
                         </div>
 
                         <div class="bottom-right">
-                            <div class="container color-font-discussion">
+                            <div class="container font-discussion-user-1">
                                 <img class="picture-icone-1"></img>
                                 <p>Hello. How are you today?</p>
                                 <span class="time-right">11:00</span>
                               </div>
                               
-                              <div class="container darker">
+                              <div class="container font-discussion-user-2">
                                 <img class="picture-icone-3" style="float:right"></img>
                                 <p>Hey! I'm fine. Thanks for asking!</p>
                                 <span class="time-left">11:01</span>
                               </div>
                               
-                              <div class="container color-font-discussion">
+                              <div class="container font-discussion-user-1">
                                 <img class="picture-icone-1"></img>
                                 <p>Sweet! So, what do you wanna do today?</p>
                                 <span class="time-right">11:02</span>
                               </div>
                               
-                              <div class="container darker">
+                              <div class="container font-discussion-user-2">
                                 <img class="picture-icone-3" style="float:right"></img>
                                 <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
                                 <span class="time-left">11:05</span>
                               </div>
-                              <div class="container darker">
+                              <div class="container font-discussion-user-2">
                                 <img class="picture-icone-3" style="float:right"></img>
                                 <p>Hey! I'm fine. Thanks for asking!</p>
                                 <span class="time-left">11:01</span>
                               </div>
                               
-                              <div class="container color-font-discussion">
+                              <div class="container font-discussion-user-1">
                                 <img class="picture-icone-1"></img>
                                 <p>Sweet! So, what do you wanna do today?</p>
                                 <span class="time-right">11:02</span>
                               </div>
                               
-                              <div class="container darker">
+                              <div class="container font-discussion-user-2">
                                 <img class="picture-icone-3" style="float:right"></img>
                                 <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
                                 <span class="time-left">11:05</span>
@@ -143,13 +143,13 @@
                     </div>
                 </div>
 
-                <div class="col-9" id="convMalory">
+                <div class="col-9" id="malory_conv">
                     <div class="right">
                         <div class="top-right">
                             <div class="into-top-right">
                                 <br>
                                 <center>
-                                            <div class="picture-top-right" id="imageUser2"></div>
+                                            <div class="picture-top-right" id="image-user-2"></div>
                                             <p class="title2" id="nomUtilisateur2">clement_cvl</p>
                                 </center>
                           
@@ -157,19 +157,19 @@
                         </div>
 
                         <div class="bottom-right">
-                            <div class="container color-font-discussion">
+                            <div class="container font-discussion-user-1">
                                 <img class="picture-icone-2"></img>
                                 <p>Hey bro how are you?</p>
                                 <span class="time-right">11:00</span>
                               </div>
                               
-                              <div class="container darker">
+                              <div class="container font-discussion-user-2">
                                 <img class="picture-icone-3" style="float:right"></img>
                                 <p>I don't now, my girlfriend broke up whith me</p>
                                 <span class="time-left">11:01</span>
                               </div>
                               
-                              <div class="container color-font-discussion">
+                              <div class="container font-discussion-user-1">
                                 <img class="picture-icone-2"></img>
                                 <p>How it's so sad but : one lost, ten found. </p>
                                 <span class="time-right">11:02</span>
@@ -178,7 +178,7 @@
 
 
                               <textarea></textarea>
-                              <center><button type="btn_primary" class="boutonSub">Send</button></center>
+                              <center><button type="btn_primary" class="send-button">Send</button></center>
                         </div>
                     </div>
                 </div>

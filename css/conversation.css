@@ -8,12 +8,12 @@ body
   padding: 10px;
 }
 
-#convThomas
+#thomas_conv 
 {
   display: none;
 }
 
-#convMalory
+#malory_conv
 {
   display: none;
 }
@@ -79,19 +79,6 @@ body
     border-color: #844b52;
 }
 
-.picture2
-{
-    display: block;
-    width: 20px;
-    height:20px;
-    background-color: cornsilk;
-    border-radius: 100px;
-    background-image: url('../images/profil.png');
-    background-size: 450px;
-    background-repeat: no-repeat;
-    border: 3px solid ;
-    border-color: #844b52;
-}
 
 .picture-top-right
 {
@@ -106,11 +93,11 @@ body
     border-color: #844b52;
 }
 
-#imageUser1
+#image-user-1
 {
   background-image: url('../images/icone1.jpg');
 }
-#imageUser2
+#image-user-2
 {
   background-image: url('../images/icone2.jpg');
 }
@@ -208,12 +195,12 @@ body
   }
   
   /* Darker chat container */
-  .darker {
+  .font-discussion-user-1 {
     border-color: #ccc;
     background-color: #d38787;
   }
 
-  .color-font-discussion{
+  .font-discussion-user-2{
     border-color: #ccc;
     background-color: #96737b;
   }
@@ -260,7 +247,7 @@ body
 }
 
 
-.boutonSub {
+.send-button {
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -286,14 +273,14 @@ body
   text-decoration: none;
 }
 
-.boutonSub:hover 
+.send-button:hover 
 {
     color: #fff;
     background-color: #8c676f;
     border-color: #8c676f;
 }
 
-.boutonSub:focus
+.send-button:focus
 {
     color: #fff;
     background-color: #8c676f;
@@ -302,12 +289,12 @@ body
     outline: 0;
 }
 
-.boutonSub:active
+.send-button:active
 {
     border-style: none;
     border: 0px;
 }
-.recherche
+.research
 {
  
   background-image: url("../images/look.png");
@@ -321,9 +308,6 @@ body
   margin-bottom: 12px;
   border-radius: 4px;
 
-}
-.recherche:focus {
-  outline:  none;
 }
 
 textarea
