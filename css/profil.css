@@ -27,6 +27,21 @@ body
     border: 3px solid ;
     border-color: #844b52;
 }
+.picture-other
+{
+    display: block;
+    width: 150px;
+    height:150px;
+    background-color: cornsilk;
+    border-radius: 100px;
+    background-image: url('../images/icone1.jpg');
+    background-position: top;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    
+    border: 3px solid ;
+    border-color: #844b52;
+}
 .inside
 {
     width: 1200px;
@@ -69,18 +84,31 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height:250px;
+    width: 350px;
+    height:350px;
     opacity: 0;
     transition: .5s ease;
     background-color: #e2e2e2;
+    border-radius: 20px;
     z-index: 1;
+    overflow:scroll;
+ 
   }
-  
-  .post:hover .overlay {
+
+
+  .overlay::-webkit-scrollbar 
+  {
+    display: none;
+  }
+  .post:hover .overlay 
+  {
     opacity: 1;
   }
 
+  .overlay p
+  {
+      font-size: 30px;
+  } 
 .bio
 {
     margin-left: auto;
@@ -93,6 +121,33 @@ body
     color : #c4c4c4;
 
 }
+
+.btn-follow
+{
+    background-color: #491722;
+    border: 1px solid #844b52;
+    color: #844b52;
+    padding: 5px 13px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-follow:hover 
+{
+    color: #fff;
+    background-color: #8c676f;
+    border-color: #8c676f;
+}
+
+.btn-follow:focus
+{
+    outline: 0;
+}
+
+
+
+
 
 
 
