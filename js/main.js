@@ -143,7 +143,6 @@ function left_rotation()
 function open_article(cl)
 {
   document.getElementById("full_post").style.visibility = "visible";
-  location.href='#top';
 }
 
 
@@ -152,12 +151,11 @@ function close_article()
   document.getElementById("full_post").style.visibility = "hidden";
   document.getElementById("open_comment").style.visibility = "hidden";
   location.href='#base';
+  console.log("hey3");
 }
 function open_comment()
 {
-  location.href='#comment';
   document.getElementById("open_comment").style.visibility = "visible";
-  
 }
 function close_comment()
 {

@@ -18,14 +18,14 @@ textarea:focus
 .comment_hide
 {
     visibility: hidden;
-    margin-top:1520px;
+    margin-top:1600px;
         color: white;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: #722E37;
-        width: 1200px;
+        width: 80%;
         height: 650px;
         border-radius: 10px;
         padding: 10px;
@@ -132,10 +132,4 @@ textarea:focus
 {
     transform: scale(1.2);
 }
-
-textarea {
-    resize: none;
-    height:80%;
-    width: 80%;
-  }
 
